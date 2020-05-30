@@ -177,7 +177,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @returns {boolean} True if value is an FormData, otherwise false
 	 */
 	function isFormData(val) {
-	  return (typeof FormData !== 'undefined') && (val instanceof FormData);
+	  return (typeof FormData !== 'undefined') && (val instanceof FormData || val instanceof Object);
 	}
 	
 	/**
